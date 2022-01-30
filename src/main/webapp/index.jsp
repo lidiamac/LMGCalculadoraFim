@@ -21,15 +21,16 @@
                 <input type="text" name="val2" id="valor2">
             </div>
 
-            <div class="btn-group col-12 mt-4" role="group" aria-label="Basic outlined example" name="operacao">
-                <button type="submit" value="somar" class="btn btn-outline-success">+</button>
-                <button type="submit" value="subtrair" class="btn btn-outline-success">-</button>
-                <button type="submit" value="multiplicar" class="btn btn-outline-success">*</button>
-                <button type="submit" value="dividir" class="btn btn-outline-success">/</button>
-            </div>
+            <select class="btn-group col-12 mt-4" role="group" aria-label="Basic outlined example" name="opcao">
+                <option value="somar" class="btn btn-outline-success">+</option>
+                <option value="subtrair" class="btn btn-outline-success">-</option>
+                <option value="multiplicar" class="btn btn-outline-success">*</option>
+                <option value="dividir" class="btn btn-outline-success">/</option>
+            </select>
             
             <div class="btn-group col-12 mt-4" role="group" aria-label="Basic outlined example">
 				<button type="reset" value="limpar" class="btn btn-outline-warning">LIMPAR</button>
+				<button type="submit" value="limpar" class="btn btn-outline-danger">CALCULAR</button>
 			</div>
 			
         </div>

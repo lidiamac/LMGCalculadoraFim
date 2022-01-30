@@ -39,14 +39,15 @@ public class ServletCalculadora extends HttpServlet {
 				
 				int valor1 = Integer.parseInt(request.getParameter("val1"));
 				int valor2 = Integer.parseInt(request.getParameter("val2"));
+				String opcao = request.getParameter("opcao");
 				
 				Calcula c = new Calcula(valor1, valor2);
 				
-				if ((request.getParameter("operacao") == "soma")){
+				if (opcao.equals("somar")){
 					request.setAttribute("result", c.soma());
-				} else if ((request.getParameter("operacao") == "subtracao")) {
+				} else if (opcao.equals("subtrair")) {
 					request.setAttribute("result", c.subtracao());
-				} else if ((request.getParameter("operacao") == "multiplicacao")) {
+				} else if (opcao.equals("multiplicar")) {
 					request.setAttribute("result", c.multiplicacao());
 				} else {
 					request.setAttribute("result", c.divisao());
